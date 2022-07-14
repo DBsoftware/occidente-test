@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <ul ngbNav #nav="ngbNav" class="nav-tabs bb justify-content-between">
+    <li ngbNavItem class="nb">
+      <a ngbNavLink class="nb">First</a>
+      <ng-template ngbNavContent>
+        <div class="row  justify-content-between">
+          <app-selections *ngFor="let data of items" [data]="data"></app-selections>
+        </div>
+      </ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Second</a>
+      <ng-template ngbNavContent><app-selections></app-selections></ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Third</a>
+      <ng-template ngbNavContent><app-selections></app-selections></ng-template>
+    </li>
+  </ul>
+</div>
+<div class="container">
+  <div [ngbNavOutlet]="nav"></div>
+</div>
