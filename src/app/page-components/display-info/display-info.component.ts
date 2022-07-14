@@ -1,3 +1,4 @@
+import { UserData } from './../../interfaces/user-data';
 import { Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
@@ -7,14 +8,14 @@ import { Observable, of } from 'rxjs';
   styleUrls: ['./display-info.component.scss']
 })
 export class DisplayInfoComponent implements OnInit {
-  rawdata = {
+  rawdata: UserData = {
     "nit":"800220154",
     "nombre": "Flotas la Macarena",
     "capa": "Oro",
     "segmento": "Aval",
     "gerenteRelacion": "Carlos Gómez"
     }
-    data: Observable<any> = of(null)
+    data: Observable<UserData | null> = of(null)
   constructor() { }
 
   ngOnInit() {

@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Iselection } from 'src/app/interfaces/selection';
 
-interface Iselection{
-  icon: string,
-  title: string,
-}
 
 
 @Component({

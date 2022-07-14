@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavigationBarModule } from './page-components/navigation-bar/navigation-bar.module';
 import { DisplayInfoModule } from './page-components/display-info/display-info.module';
 import { SelectionModule } from './page-components/selection/selection.module';
+import { AlertModule } from './page-components/alert/alert.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { SelectionModule } from './page-components/selection/selection.module';
     NavigationBarModule,
     DisplayInfoModule,
     SelectionModule,
+    AlertModule,
     NgbModule
   ],
   providers: [],
