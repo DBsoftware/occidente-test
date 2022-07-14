@@ -1,23 +1,28 @@
 <div class="container-fluid">
   <ul ngbNav #nav="ngbNav" class="nav-tabs bb justify-content-between">
     <li ngbNavItem class="nb">
-      <a ngbNavLink class="nb">First</a>
+      <a ngbNavLink >First</a>
       <ng-template ngbNavContent>
-        <div class="row  justify-content-between">
-          <app-selections *ngFor="let data of items" [data]="data"></app-selections>
+        <div class="row row-col-2 justify-content-center w-100 m-0">
+          <p class="h6 occ-blue mb-5">Indique la linea de credito que quiere reconsiderar</p>
+          <app-selections class="col-6 col-sm-5 p-0 px-1" *ngFor="let data of items" [data]="data"></app-selections>
         </div>
       </ng-template>
     </li>
-    <li ngbNavItem>
-      <a ngbNavLink>Second</a>
-      <ng-template ngbNavContent><app-selections></app-selections></ng-template>
+    <li ngbNavItem >
+      <a ngbNavLink >Second</a>
+            <ng-template ngbNavContent>
+              <p class="h6 occ-blue">Nada por el momento!</p>
+            </ng-template>
     </li>
     <li ngbNavItem>
-      <a ngbNavLink>Third</a>
-      <ng-template ngbNavContent><app-selections></app-selections></ng-template>
+      <a ngbNavLink >Third</a>
+            <ng-template ngbNavContent>
+              <p class="h6 occ-blue">Nada por el momento! </p>
+          </ng-template>
     </li>
   </ul>
 </div>
-<div class="container">
-  <div [ngbNavOutlet]="nav"></div>
+<div class="row  my-4 mx-0 justify-content-center">
+  <div class="col" [ngbNavOutlet]="nav"></div>
 </div>

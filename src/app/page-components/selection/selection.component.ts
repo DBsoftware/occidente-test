@@ -13,8 +13,8 @@ interface Iselection{
 })
 export class SelectionComponent implements OnInit {
   items: Array<Iselection> = [
-    {icon: 'house-heart', title: "Cartera Ordinaria"},
-    {icon: 'house-heart', title: "Leasing"}
+    {icon: 'box2-heart', title: "Cartera Ordinaria"},
+    {icon: 'house', title: "Leasing"}
   ]
   constructor() { }
 

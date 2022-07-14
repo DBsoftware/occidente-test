@@ -3,3 +3,17 @@ $occidente-blue: #0088CA;
   border-color: transparent;
   border-bottom: 2px solid $occidente-blue;
 }
+
+.h-10m{
+  height: 10em;
+}
+
+.nav-tabs {
+  @media (max-width: 475px) {
+    border-color: transparent;
+  }
+}
+
+.nav-link{
+  color: $occidente-blue;
+}

@@ -12,6 +12,12 @@ $occidente-blue: #0088CA;
   color: $occidente-blue;
   font-weight: 500;
 }
+.occ-blue{
+  color: $occidente-blue!important;
+}
+.text-warn{
+  color: rgb(246, 201, 2)!important;
+}
 
 .bi::before{
   font-weight: bolder !important;
