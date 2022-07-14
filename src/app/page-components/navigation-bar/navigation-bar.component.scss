@@ -1,0 +1,26 @@
+.logo-container{
+  height: 5em;
+  .logo{
+    overflow: hidden;
+      height: 100%;
+      background-image: url('../../../assets/opengraph-banco-de-occidente.jpeg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      @media (min-width: 425px) {
+        background-size: 50%;
+      }
+      @media (min-width: 900px) {
+        background-size: cover;
+      }
+  }
+}
+
+.nav{
+  border-bottom: 1px solid grey
+}
+
+
+.bi::before{
+  font-weight: bold !important;
+}

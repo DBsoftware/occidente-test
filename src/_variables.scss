@@ -1,0 +1,14 @@
+
+// scss-docs-start theme-color-variables
+
+// scss-docs-end theme-color-variables
+// scss-docs-start theme-colors-map
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+$primary: $white;
+$component-active-color:      $blue;
+$theme-colors: (
+  primary: $primary
+);
+
