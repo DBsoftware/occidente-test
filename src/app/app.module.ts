@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavigationBarModule } from './page-components/navigation-bar/navigation-bar.module';
+import { DisplayInfoModule } from './page-components/display-info/display-info.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { NavigationBarModule } from './page-components/navigation-bar/navigation
     BrowserModule,
     AppRoutingModule,
     NavigationBarModule,
+    DisplayInfoModule,
     NgbModule
   ],
   providers: [],

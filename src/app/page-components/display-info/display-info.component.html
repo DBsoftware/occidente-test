@@ -1,0 +1,13 @@
+<div class="container-fluid row justify-content-center m-0 py-4">
+  <div class="col-10 align-items-cente text-center bb py-4">
+    <p class="h1">{{(data |async)?.nombre}}</p>
+    <p class="h5 text-muted">Nit: {{(data |async)?.nit}}</p>
+    <p class="h6">
+      Capa: {{(data |async)?.capa}}
+      <span  >
+        <i class="bi bi-circle-fill"></i></span>
+      Segmento: {{(data |async)?.segmento}}
+    </p>
+  </div>
+
+</div>
