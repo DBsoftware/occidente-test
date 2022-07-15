@@ -19,7 +19,7 @@
   </li>
   <li ngbNavItem class="d-none d-lg-flex">
     <div class="col text-center mt-3">
-      <p class="h5 m-0 lh-1" >Carlos Gómez</p>
+      <p class="h5 m-0 lh-1" >{{(name|async)?.nombre}}</p>
       <small class="text-muted" >Gerente de Relación</small>
     </div>
     <div class="p-2">

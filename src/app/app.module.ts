@@ -9,6 +9,7 @@ import { DisplayInfoModule } from './page-components/display-info/display-info.m
 import { SelectionModule } from './page-components/selection/selection.module';
 import { AlertModule } from './page-components/alert/alert.module';
 import { FooterModule } from './page-components/footer/footer.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FooterModule } from './page-components/footer/footer.module';
     SelectionModule,
     AlertModule,
     FooterModule,
+    HttpClientModule,
     NgbModule
   ],
   providers: [],

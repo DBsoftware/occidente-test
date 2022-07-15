@@ -1,3 +1,4 @@
+import { ApiService } from './../../services/Api.service';
 import { UserData } from './../../interfaces/user-data';
 import { Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
@@ -16,11 +17,11 @@ export class DisplayInfoComponent implements OnInit {
     "gerenteRelacion": "Carlos Gómez"
     }
     data: Observable<UserData | null> = of(null)
-  constructor() { }
+  constructor(private api: ApiService) { }
 
   ngOnInit() {
 
-    this.data = of(this.rawdata)
+    this.data = this.api.shareResponse.asObservable()
   }
 
 }
