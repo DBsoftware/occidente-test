@@ -20,6 +20,14 @@
 .nav{
   border-bottom: 1px solid grey
 }
+.avatar{
+
+  .bi::before {
+    font-weight: bolder !important;
+    font-size: 3.3em !important;
+    color: #0088CA;
+  }
+}
 
 
 

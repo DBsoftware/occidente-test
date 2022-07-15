@@ -3,3 +3,8 @@
   color: rgb(212, 174, 3)!important;
   vertical-align: middle;
 }
+.lead{
+  @media (max-width: 475px) {
+    font-size: small;
+  }
+}

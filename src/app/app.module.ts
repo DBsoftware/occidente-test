@@ -8,6 +8,7 @@ import { NavigationBarModule } from './page-components/navigation-bar/navigation
 import { DisplayInfoModule } from './page-components/display-info/display-info.module';
 import { SelectionModule } from './page-components/selection/selection.module';
 import { AlertModule } from './page-components/alert/alert.module';
+import { FooterModule } from './page-components/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AlertModule } from './page-components/alert/alert.module';
     DisplayInfoModule,
     SelectionModule,
     AlertModule,
+    FooterModule,
     NgbModule
   ],
   providers: [],
