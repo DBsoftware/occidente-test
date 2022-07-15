@@ -17,7 +17,7 @@ constructor(private http: HttpClient) { }
 
 post(body: Irequest ={"nit":"800220154"}) {
   return this.http.post(this.API_PATH, body)
-      .pipe(tap(e => this.shareResponse.next(e)))
+      .pipe(tap(({data}: any) => this.shareResponse.next(data)))
 }
 
 }
